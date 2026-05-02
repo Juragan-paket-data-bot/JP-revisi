@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER (dengan glassmorphism) -->
   <header>
     <h1>Juragan Paket Data</h1>
     <p class="tagline">
@@ -16,7 +16,7 @@
     </p>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (glassmorphism) -->
   <section class="hero">
     <h2>Selamat datang di Juragan Paket Data!</h2>
     <p>
@@ -24,108 +24,134 @@
     </p>
   </section>
 
-  <!-- LAYANAN DENGAN DROPDOWN -->
+  <!-- LAYANAN DENGAN FOKUS SATU LAYANAN -->
   <section class="layanan">
     <h2>Pilih Layanan</h2>
 
+    <!-- Tombol kembali -->
+    <button id="btn-kembali">
+      ← Kembali ke semua layanan
+    </button>
+
     <!-- AKRAB XLA -->
-    <div class="layanan-item">
-      <button class="layanan-toggle">Juragan Paket Data – AKRAB XLA</button>
+    <div class="layanan-item" data-layanan="akrab_xla">
+      <div class="layanan-header">
+        <h3>AKRAB XLA</h3>
+        <p>Daftar paket AKRAB XLA untuk pelanggan XL</p>
+      </div>
+
+      <!-- TAMPILKAN LINK STOK XLA -->
+      <p class="p-stok">
+        <a href="https://stokakrab.vercel.app/" target="_blank">
+          🔍 Lihat stok AKRAB XLA
+        </a>
+      </p>
+
       <div class="sub-layanan">
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Kode+paket%3A+XLAK1%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XLA 1 (XLAK1) – 081234567890
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+SuperMini%0A-Kode+paket%3A+XLA14%0A-Harga%3A+Rp48.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 SuperMini (XLA14) – Rp48.000
         </button>
+
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Kode+paket%3A+XLAK2%0A-No+tujuan%3A+081234567891%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XLA 2 (XLAK2) – 081234567891
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+Mini%0A-Kode+paket%3A+XLA32%0A-Harga%3A+Rp61.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 Mini (XLA32) – Rp61.000
         </button>
+
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Kode+paket%3A+XLAK3%0A-No+tujuan%3A+081234567892%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XLA 3 (XLAK3) – 081234567892
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+Big%0A-Kode+paket%3A+XLA39%0A-Harga%3A+Rp65.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 Big (XLA39) – Rp65.000
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+Jumbo+V2%0A-Kode+paket%3A+XLA51%0A-Harga%3A+Rp75.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 Jumbo V2 (XLA51) – Rp75.000
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+JUMBO%0A-Kode+paket%3A+XLA65%0A-Harga%3A+Rp102.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 JUMBO (XLA65) – Rp102.000
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XLA%0A-Nama+paket%3A+MegaBig%0A-Kode+paket%3A+XLA89%0A-Harga%3A+Rp100.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 MegaBig (XLA89) – Rp100.000
         </button>
       </div>
     </div>
 
     <!-- AKRAB XDA -->
-    <div class="layanan-item">
-      <button class="layanan-toggle">Juragan Paket Data – AKRAB XDA</button>
+    <div class="layanan-item" data-layanan="akrab_xda">
+      <div class="layanan-header">
+        <h3>AKRAB XDA</h3>
+        <p>Daftar paket AKRAB XDA untuk pelanggan XL (kuota nasional)</p>
+      </div>
+
+      <!-- TAMPILKAN LINK STOK XDA -->
+      <p class="p-stok">
+        <a href="https://juraganxl.my.id/" target="_blank">
+          🔍 Lihat stok AKRAB XDA
+        </a>
+      </p>
+
       <div class="sub-layanan">
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Kode+paket%3A+XLD1%0A-No+tujuan%3A+081234567893%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XDA 1 (XLD1) – 081234567893
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA13%0A-Kode+paket%3A+XDA13%0A-Harga%3A+Rp49.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA13 – Rp49.500
         </button>
+
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Kode+paket%3A+XLD2%0A-No+tujuan%3A+081234567894%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XDA 2 (XLD2) – 081234567894
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA19%0A-Kode+paket%3A+XDA19%0A-Harga%3A+Rp52.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA19 – Rp52.500
         </button>
+
         <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Kode+paket%3A+XLD3%0A-No+tujuan%3A+081234567895%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 AKRAB XDA 3 (XLD3) – 081234567895
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA25%0A-Kode+paket%3A+XDA25%0A-Harga%3A+Rp57.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA25 – Rp57.500
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA31%0A-Kode+paket%3A+XDA31%0A-Harga%3A+Rp62.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA31 – Rp62.500
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA38%0A-Kode+paket%3A+XDA38%0A-Harga%3A+Rp67.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA38 – Rp67.500
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA47%0A-Kode+paket%3A+XDA47%0A-Harga%3A+Rp72.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA47 – Rp72.500
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA55%0A-Kode+paket%3A+XDA55%0A-Harga%3A+Rp77.500%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA55 – Rp77.500
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA63%0A-Kode+paket%3A+XDA63%0A-Harga%3A+Rp88.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA63 – Rp88.000
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA76%0A-Kode+paket%3A+XDA76%0A-Harga%3A+Rp96.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA76 – Rp96.000
+        </button>
+
+        <button class="wa-btn" 
+        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+AKRAB+XDA%0A-Nama+paket%3A+XDA88%0A-Kode+paket%3A+XDA88%0A-Harga%3A+Rp104.000%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
+          📦 XDA88 – Rp104.000
         </button>
       </div>
     </div>
 
     <!-- CIRCLE XCLP -->
-    <div class="layanan-item">
-      <button class="layanan-toggle">Juragan Paket Data – CIRCLE XCLP</button>
-      <div class="sub-layanan">
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+CIRCLE+XCLP%0A-Kode+paket%3A+XCL1%0A-No+tujuan%3A+081234567896%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 CIRCLE XCLP 1 (XCL1) – 081234567896
-        </button>
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+CIRCLE+XCLP%0A-Kode+paket%3A+XCL2%0A-No+tujuan%3A+081234567897%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 CIRCLE XCLP 2 (XCL2) – 081234567897
-        </button>
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+CIRCLE+XCLP%0A-Kode+paket%3A+XCL3%0A-No+tujuan%3A+081234567898%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 CIRCLE XCLP 3 (XCL3) – 081234567898
-        </button>
+    <div class="layanan-item" data-layanan="circle_xclp">
+      <div class="layanan-header">
+        <h3>CIRCLE XCLP</h3>
+        <p>Daftar paket CIRCLE XCLP untuk pelanggan XL</p>
       </div>
-    </div>
 
-    <!-- Masa Aktif -->
-    <div class="layanan-item">
-      <button class="layanan-toggle">Juragan Paket Data – Masa Aktif</button>
-      <div class="sub-layanan">
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+Masa+Aktif%0A-Kode+paket%3A+MA7%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 Masa Aktif 7 Hari (MA7) – 081234567890
-        </button>
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+Masa+Aktif%0A-Kode+paket%3A+MA30%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 Masa Aktif 30 Hari (MA30) – 081234567890
-        </button>
-        <button class="wa-btn" 
-        onclick="window.open('https://wa.me/6287786803835?text=Halo+admin+Juragan+Paket+Data%0A%0ASaya+mau+pesan%3A%0A-Layanan%3A+Masa+Aktif%0A-Kode+paket%3A+MA90%0A-No+tujuan%3A+081234567890%0A%0AMetode+pembayaran%3A+QRIS%0ASaya+siap+kirim+bukti+pembayaran','_blank')">
-          📦 Masa Aktif 90 Hari (MA90) – 081234567890
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- QRIS & PEMBAYARAN -->
-  <section class="pembayaran">
-    <p>Pembayaran dilakukan via QRIS.<br>
-       Setelah kirim pesan order WA, silakan kirim bukti pembayaran.</p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>Layanan untuk seluruh Indonesia.</p>
-    <p>Juragan Paket Data | Proses cepat⚡ Harga terjangkau 💵</p>
-  </footer>
-
-  <script>
-    // toggle dropdown sub layanan
-    document.querySelectorAll(".layanan-toggle").forEach(button => {
-      button.addEventListener("click", () => {
-        const subBox = button.nextElementSibling;
-        subBox.classList.toggle("open");
-      });
-    });
-  </script>
-
-</body>
-</html>
+      <!-- TAMPIL
